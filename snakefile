@@ -16,9 +16,9 @@ rule run_antismash:
     output:
         touch("antismash/{sample}/antismash.txt")
     threads:
-        15
+        16
     resources:
-        mem=120
+        mem=64
         #time=360
     shell:
         """
